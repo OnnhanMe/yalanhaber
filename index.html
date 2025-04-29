@@ -85,9 +85,25 @@
       text-align: center;
     }
 
+    /* Mobile Responsive */
+    @media screen and (max-width: 768px) {
+      nav ul {
+        text-align: center;
+        display: block;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+
+      header {
+        font-size: 2em;
+      }
+    }
   </style>
 </head>
 <body>
+  <!-- Header ve Menü -->
   <header>
     ÜSTADIN BLOGU
   </header>
@@ -98,12 +114,15 @@
       <li><a href="#contact">İletişim</a></li>
     </ul>
   </nav>
+  <!-- Ana İçerik -->
   <div class="content">
     <article>
       <h2>İlk Yazı: Nerden Çıktı Bu Blog?</h2>
+      <img src="https://via.placeholder.com/1000x500" alt="Blog Başlık" style="width: 100%; height: auto; border-radius: 10px;">
       <p>Bugün ChatGPT ile birlikte kafayı kırdık ve "hadi siktir et her şeyi, blog kuralım" dedik. İşte buradayız. Bu daha başlangıç! 🔥</p>
     </article>
   </div>
+  <!-- Footer -->
   <footer>
     © 2025 Üstad & ChatGPT Production
   </footer>
