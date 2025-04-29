@@ -1,14 +1,3 @@
-<header>
-  <nav>
-    <ul class="menu">
-      <li><a href="#home">Ana Sayfa</a></li>
-      <li><a href="#about">Hakkında</a></li>
-      <li><a href="#contact">İletişim</a></li>
-    </ul>
-  </nav>
-  ÜSTADIN BLOGU
-</header>
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -22,41 +11,65 @@
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #2c3e50, #34495e);
-      color: #f1f1f1;
+      background: #f5f5f5;
+      color: #333;
     }
 
+    /* Header ve Menü */
     header {
-      background: rgba(231, 30, 99, 0.9);
-      padding: 30px 0;
+      background: #e91e63;
+      padding: 20px;
       text-align: center;
-      font-size: 3em;
+      font-size: 2.5em;
       font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
+      color: #fff;
+    }
+
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.2em;
+    }
+
+    nav ul li a:hover {
+      color: #f1f1f1;
     }
 
     /* İçerik Bölümü */
     .content {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 30px;
-      background: rgba(0, 0, 0, 0.7);
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      padding: 20px;
     }
 
     article {
-      background: rgba(255, 255, 255, 0.1);
+      background: #fff;
       padding: 20px;
       margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     article h2 {
-      font-size: 2.2em;
-      margin-bottom: 15px;
+      font-size: 2em;
+      color: #333;
     }
 
     article p {
@@ -66,11 +79,10 @@
 
     /* Footer */
     footer {
-      text-align: center;
-      padding: 10px;
       background: #111;
       color: #777;
-      font-size: 1em;
+      padding: 15px;
+      text-align: center;
     }
 
   </style>
@@ -79,6 +91,13 @@
   <header>
     ÜSTADIN BLOGU
   </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Ana Sayfa</a></li>
+      <li><a href="#about">Hakkında</a></li>
+      <li><a href="#contact">İletişim</a></li>
+    </ul>
+  </nav>
   <div class="content">
     <article>
       <h2>İlk Yazı: Nerden Çıktı Bu Blog?</h2>
@@ -90,36 +109,3 @@
   </footer>
 </body>
 </html>
-/* Menü için stil */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #e91e63;
-  border-radius: 5px;
-  margin: 10px 0;
-}
-
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.menu li {
-  margin-right: 20px;
-}
-
-.menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.2em;
-  transition: color 0.3s ease;
-}
-
-.menu li a:hover {
-  color: #f1f1f1;
-}
