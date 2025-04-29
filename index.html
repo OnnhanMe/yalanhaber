@@ -1,3 +1,14 @@
+<header>
+  <nav>
+    <ul class="menu">
+      <li><a href="#home">Ana Sayfa</a></li>
+      <li><a href="#about">Hakkında</a></li>
+      <li><a href="#contact">İletişim</a></li>
+    </ul>
+  </nav>
+  ÜSTADIN BLOGU
+</header>
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -79,3 +90,36 @@
   </footer>
 </body>
 </html>
+/* Menü için stil */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #e91e63;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #f1f1f1;
+}
